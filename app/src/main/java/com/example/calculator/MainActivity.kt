@@ -21,24 +21,42 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.apply {
-            button0.setOnClickListener { appendDigit("0") }
-            button1.setOnClickListener { appendDigit("1") }
-            button2.setOnClickListener { appendDigit("2") }
-            button3.setOnClickListener { appendDigit("3") }
-            button4.setOnClickListener { appendDigit("4") }
-            button5.setOnClickListener { appendDigit("5") }
-            button6.setOnClickListener { appendDigit("6") }
-            button7.setOnClickListener { appendDigit("7") }
-            button8.setOnClickListener { appendDigit("8") }
-            button9.setOnClickListener { appendDigit("9") }
-            buttonDot.setOnClickListener { appendDot() }
-            buttonAdd.setOnClickListener { setOperator("+") }
-            buttonSubtract.setOnClickListener { setOperator("-") }
-            buttonMultiply.setOnClickListener { setOperator("*") }
-            buttonDivide.setOnClickListener { setOperator("/") }
-            buttonEqual.setOnClickListener { calculateResult() }
-            buttonClear.setOnClickListener { clear() }
+            button0.setOnClickListener {
+                appendDigit("0") }
+            button1.setOnClickListener {
+                appendDigit("1") }
+            button2.setOnClickListener {
+                appendDigit("2") }
+            button3.setOnClickListener {
+                appendDigit("3") }
+            button4.setOnClickListener {
+                appendDigit("4") }
+            button5.setOnClickListener {
+                appendDigit("5") }
+            button6.setOnClickListener {
+                appendDigit("6") }
+            button7.setOnClickListener {
+                appendDigit("7") }
+            button8.setOnClickListener {
+                appendDigit("8") }
+            button9.setOnClickListener {
+                appendDigit("9") }
+            buttonDot.setOnClickListener {
+                appendDot() }
+            buttonAdd.setOnClickListener {
+                setOperator("+") }
+            buttonSubtract.setOnClickListener {
+                setOperator("-") }
+            buttonMultiply.setOnClickListener {
+                setOperator("*") }
+            buttonDivide.setOnClickListener {
+                setOperator("/") }
+            buttonEqual.setOnClickListener {
+                calculateResult() }
+            buttonClear.setOnClickListener {
+                clear() }
         }
     }
 
